@@ -16,17 +16,17 @@
 
 <p>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
 
-<form action="https://www.blackgoosebistro.com/pizza.php" method="post">
+<form action="http://www.blackgoosebistro.com/pizza.php" method="post">
 
 <fieldset>
 <legend>Information</legend>
 <ul>
-  <li><label for="form-name">Name: <input type="text" name="customer_name" id="form-name"></li>
-  <li><label for="form-address">Address: <input type="text" name="address" id="form-address"></li>
-  <li><label for="form-tel">Telephone Number: <input type="text" name="phone_number" id="form-tel"></li>
-  <li><label for="form-email">Email: <input type="text" name="email" id="form-email"></li>
-  <li>Delivery instructions: <br>
-  <textarea name="instructions" id="form-instructions" rows="4" cols="60" maxlength="400" placeholder="No more than 400 characters long"></textarea></li>
+  <li><label for="form-name">Name:</label> <input type="text" name="customername" id="form-name"></li>
+  <li><label for="form-address">Address:</label> <input type="text" name="address" id="form-address"></li>
+  <li><label for="form-tel">Telephone Number:</label> <input type="tel" name="telephone" id="form-tel"></li>
+  <li><label for="form-email">Email: </label> <input type="email" name="email" id="form-email"></li>
+  <li>Delivery instructions:<br>
+  <textarea name="instructions" rows="4" cols="60" maxlength="400" id="form-story" placeholder="No more than 400 characters long"></textarea></li>
 </ul>
 </fieldset>
 
@@ -58,14 +58,15 @@
 
 <fieldset>
 <legend>Number of Pizzas</legend>
-<p>How many pizzas:
-<select name="pizzas" size="1">
-  <option>1</option>
-  <option>2</option>
-  <option>3</option>
-  <option>4</option>
-  <option>5</option>
-</select>
+<p>How many pizzas: 
+  <select name="pizzas" size="1">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+  </select>
 </p>
 </fieldset>
 
