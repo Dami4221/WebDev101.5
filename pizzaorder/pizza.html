@@ -23,9 +23,9 @@
 <ul>
   <li><label for="form-name">Name: <input type="text" name="customer_name" id="form-name"></li>
   <li><label for="form-address">Address: <input type="text" name="address" id="form-address"></li>
-  <li><label for="form-phone">Telephone Number: <input type="text" name="phone_number" id="form-phone"></li>
+  <li><label for="form-tel">Telephone Number: <input type="text" name="phone_number" id="form-tel"></li>
   <li><label for="form-email">Email: <input type="text" name="email" id="form-email"></li>
-  <li><label for="form-instructions">Delivery instructions: <br>
+  <li>Delivery instructions: <br>
   <textarea name="instructions" id="form-instructions" rows="4" cols="60" maxlength="400" placeholder="No more than 400 characters long"></textarea></li>
 </ul>
 </fieldset>
@@ -39,15 +39,15 @@
 <ul>
   <li><label><input type="radio" name="crust" value="white"> Classic white</label></li>
   <li><label><input type="radio" name="crust" value="multigrain"> Multigrain</label></li>
-  <li><label><input type="radio" name="crust" value="cheese-stuffed"> Cheese-stuffed crust</label></li>
-  <li><label><input type="radio" name="crust" value="gluten-free"> Gluten-free</label></li>
+  <li><label><input type="radio" name="crust" value="cheesecrust"> Cheese-stuffed crust</label></li>
+  <li><label><input type="radio" name="crust" value="glutenfree"> Gluten-free</label></li>
 </ul>
 
 <fieldset>
 <legend>Toppings</legend> <em>(Choose as many as you want)</em>:</p>
 <ul>
-  <li><label><input type="checkbox" name="toppings[]" value="red_sauce" checked> Red sauce</label></li>
-  <li><label><input type="checkbox" name="toppings[]" value="white_sauce" checked> White sauce</label></li>
+  <li><label><input type="checkbox" name="toppings[]" value="redsauce" checked> Red sauce</label></li>
+  <li><label><input type="checkbox" name="toppings[]" value="whitesauce" checked> White sauce</label></li>
   <li><label><input type="checkbox" name="toppings[]" value="mozzarella" checked> Mozzarella cheese</label></li>
   <li><label><input type="checkbox" name="toppings[]" value="pepperoni" checked> Pepperoni</label></li>
   <li><label><input type="checkbox" name="toppings[]" value="mushrooms" checked> Mushrooms</label></li>
@@ -58,7 +58,7 @@
 
 <fieldset>
 <legend>Number of Pizzas</legend>
-<p>How many pizzas:</p>
+<p>How many pizzas:
 <select name="pizzas" size="1">
   <option>1</option>
   <option>2</option>
@@ -66,11 +66,11 @@
   <option>4</option>
   <option>5</option>
 </select>
+</p>
 </fieldset>
 
 </fieldset>
 <p><input type="submit" value="Bring me a pizza!"></p>
-
 </form>
 
 </body>
