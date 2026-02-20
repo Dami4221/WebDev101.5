@@ -9,9 +9,57 @@
 <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
 <style>
 	body {
-		font-family: Verdana, sans-serif;
+		font-family: Georgia, serif;
+		line-height: 1.75;
 	}
-
+	h1 {
+		font: bold 1.5rem "Marko One", Georgia, serif;
+		color: olive;
+		text-shadow: .1em .1em .05em gainsboro;
+	}
+	html {
+		font-size: 100%;
+	}
+	h2 {
+		font-size: 1rem;
+		text-transform: uppercase;
+		letter-spacing: .5em;
+		color: cadetblue;
+	}
+	dt {
+		font-weight: bold;
+	}
+	strong {
+		font-style: italic;
+	}
+	dt strong {
+		color: tomato;
+	}
+	#info {
+		color: cadetblue;
+	}
+	#info p {
+		font-style: italic;
+	}
+	.price {
+		font-style: italic;
+		color: gray;
+	}
+	.label {
+		font-variant: small-caps;
+		font-style: normal;
+	}
+	p.warning, sup {
+		font-size: small;
+		color: tomato;
+	}		
+	h1, h2, #info {
+		text-align: center;
+	}	
+	h2 + p {
+		text-align: center;
+		font-style: italic;
+	}
 </style>
 </head>
 
@@ -52,6 +100,7 @@
 </div>
 
 <p class="warning"><sup>*</sup> We are required to warn you that undercooked food is a health risk.</p>
-
+<br>
+<a href="index.html">Back to Home</a>
 </body>
 </html>
