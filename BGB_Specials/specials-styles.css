@@ -31,7 +31,7 @@ form > p {
 [name="email"] {
   background-color: lightsalmon;
 }
-[id$="-name"] {
+[name$="-name"] {
   background-color: salmon;
 }
 /* LINK STYLES */
@@ -50,16 +50,14 @@ a:link {
 a:visited {
   color: #937393;
 }
-a:focus {
+a:focus, a.hover {
   color: #C700F2;
-  background-color: white;
+  background-color: #fff;
 }
-a:hover {
-  color: #C700F2;
-  background-color: white;
-}
+
 a:active {
-  color: fuchsia;
+ color: fuchsia;
+ background-color: #fff;
 }
 
 
@@ -118,10 +116,10 @@ td:not(.day) {
   padding: .2em 1em;
   color: white;
 }
-h3:nth-of-type(odd) {
+#monthly h3:nth-of-type(odd) {
   background-color: chocolate;
 }
-h3:nth-of-type(even) {
+#monthly h3:nth-of-type(even) {
   background-color: olive;
 }
 
@@ -133,8 +131,8 @@ h3:nth-of-type(even) {
   content: url(star-icon-1.png);
   margin-right: .5em;
 }
-.fave::after {
-  content: "(Fan Favorite)";
+#entertainment li.fave::after {
+  content: " (Fan Favorite)";
   color: darkolivegreen
 }
 
