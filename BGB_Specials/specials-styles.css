@@ -50,7 +50,7 @@ a:link {
 a:visited {
   color: #937393;
 }
-a:focus, a.hover {
+a:focus, a:hover {
   color: #C700F2;
   background-color: #fff;
 }
@@ -133,7 +133,7 @@ td:not(.day) {
 }
 #entertainment li.fave::after {
   content: " (Fan Favorite)";
-  color: darkolivegreen
+  color: darkolivegreen;
 }
 
 /* PAGE FORMATTING STYLES */
