@@ -1,0 +1,17 @@
+header h1 {
+    font-size: 45px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+ul li {
+    float: left;
+}
+ul li a {
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
