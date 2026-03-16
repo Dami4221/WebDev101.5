@@ -2,14 +2,14 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Pawsitive Rescue</title>
+        <title>Volunteer with Pawsitive Rescue</title>
         <link rel="icon" href="media/pr_title_logo.svg" type="image/svg">
         <link rel="stylesheet" href="pr_styles.css">
     </head>
     <body>
         <header id="header-container">
-            <h1 class="org-name">Pawsitive Rescue</h1>
             <img class="logo" src="media/pr_logo.png" alt="Pawsitive Rescue Logo" height="50px" width="50px">
+            <h1 class="org-name">Pawsitive Rescue</h1>
             <nav id="main-nav" class="nav-list"> 
                 <ul>
                     <li><a href="pr_index.html" class="nav-link">Home</a></li>
@@ -21,30 +21,63 @@
                 </ul>
             </nav>
         </header>
+    <main>
+        <section id="volunteer-form">
+        <h2>Volunteer with Us</h2>
+            <p>Fill out the form below to sign up for volunteer opportunities!</p>
+            <form action="submit_volunteer_form.php" method="post">
+                <fieldset>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <ul>
+                        <li><label for="form-name">Name:</label> <input type="text" id="form-name" name="name" required></li>
+                        <li><label for="form-email">Email:</label> <input type="email" id="form-email" name="email" required></li>
+                        <li><label for="form-phone">Phone Number:</label> <input type="tel" id="form-tel" name="telephone"></li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>About You</legend>
+                    <label for="form-role">Preferred Role:</label>
+                    <select name="role" id="form-role" size="1">
+                        <option value="Animal Care">Animal Care</option>
+                        <option value="Event Support">Event Support</option>
+                        <option value="Office Help">Office Help</option>
+                    </select>
+                    <br>
+                    <label for="form-availability">Availability:</label>
+                    <input type="radio" id="availability-weekdays" name="availability" value="weekdays">
+                    <label for="availability-weekdays">Weekdays</label>
+                    <input type="radio" id="availability-weekends" name="availability" value="weekends">
+                    <label for="availability-weekends">Weekends</label>
+                    <input type="radio" id="availability-both" name="availability" value="Both">
+                    <label for="availability-both">Both</label>
+                    <br>
+                    <label for="interests">Additional Interests or Skills:</label><br>
+                    <input type="checkbox" id="interest-dog-walking" name="interests" value="Dog Walking">
+                    <label for="interest-dog-walking">Dog Walking</label><br>
+                    <input type="checkbox" id="interest-cat-care" name="interests" value="Cat Care">
+                    <label for="interest-cat-care">Cat Care</label><br>
+                    <input type="checkbox" id="fundraising" name="interests" value="Fundraising">
+                    <label for="fundraising">Fundraising</label><br>
+                    <input type="checkbox" id="fostering" name="interests" value="Fostering">
+                    <label for="fostering">Fostering</label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Questions or Comments</legend>
+                    <textarea id="form-comments" name="comments" rows="4" cols="50"></textarea>
+                </fieldset>
+                <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-         <footer id="footer-container">
+        <footer id="footer-container">
         <section class="contact-info">
             <h3>Contact Information</h3>
-            <p>5050 Chance Lane<br>
-               Gotham City, NJ 53241<br>
-               Phone: (158) 392-7460<br>
-               Email: info@pawsitiverescue.org</p>
+            <p>100 Rescue Lane<br>
+               Pawsville, MO 64001<br>
+               Phone: (555) 987-6543<br>
+               Email: contact@pawsitiverescue.org</p>
         </section>
 
         <section class="footer-nav">
