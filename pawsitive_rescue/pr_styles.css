@@ -1,20 +1,137 @@
-header h1 {
-    font-size: 45px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 20px;
+    background-color: #5BA4A4;
+    text-align: center;
 }
+h1, h2, h3, p {
+    color: #FFF9E6;
+}
+header h1 {
+    font-size: 45px;;
+}
+/*navigation*/
 ul {
-    list-style-type: none;
+    list-style: none;
+    text-align: center;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 ul li {
-    float: left;
+    display: inline-block;
+    margin: 0 10px
+    
 }
 ul li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
+nav a {
+    color: #FFF9E6;
+    font-size: 18px
+    ;
+}
+nav a:hover {
+    color: #C06C48;
+    text-decoration: underline;
+}
+nav a:active {
+    color: #3B3B3B
+}
+nav a:visited {
+    color: #3B3B3B;
+}
+/*footer*/
+footer {
+    background-color: #407272;
+    color: #FFF9E6;
+    padding: 20px;
+    font-size: smaller;
+    
+}
+footer .copyright p {
+    font-size: 15px;
+}
+footer .nav-link {
+    color: #FFF9E6;
+    font-size: 16px;
+    text-align: center;
+}
+.footer-nav a:hover {
+    color: #C06C48;
+    text-decoration: underline;
+}
+footer .footer-nav a:active, a:visited {
+    color: #3B3B3B
+}
+footer .social-media a {
+    color: #FFF9E6
+}
+footer .social-media a:hover {
+    color: #C06C48
+}
+footer .social-media a:active, a:visited {
+    color: #3B3B3B
+}
+/*Adopt Page*/
+.pet-list {
+    color:#FFF9E6
+}
+/*volunteer*/
+form {
+    color: #FFF9E6;
+    font-family: Arial, sans-serif;
+}
+input {
+    color:#C06C48
+}
+fieldset {
+    padding: 10px;
+    margin: 30px;
+}
+
+#form-name {
+    margin: 10px
+}
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid #407272;
+    color: #FFF9E6
+    
+}
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+}
+table td {
+    padding-inline: 30px;
+}
+th {
+    background-color:#407272
+}
+tbody{
+    background-color: #3eb6b6
+    
+}
+#row-two, #row-four {
+    background-color:#5BA4A4;
+}
+#row-three {
+    background-color: rgb(50, 163, 50);
+}
+#media-audio a {
+    color: #C06C48;
+}
+/*Contact*/
+#social-media a {
+    color: #FFF9E6;
+    text-decoration: underline;
+}
+#social-media a:hover {
+    color: #C06C48;
+}
+#social-media a:active {
+    color: #3B3B3B;
 }
