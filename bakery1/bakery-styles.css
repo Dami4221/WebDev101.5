@@ -55,7 +55,7 @@ main {
   line-height: 1.8em;
   color: #555;
   padding: 16px;
-  border: double 6px #eaddc4;
+  border: double 6px #EADDC4;
   border-radius: 25px;
   margin: 2.5%;
 }
@@ -66,6 +66,7 @@ h3 {
   border-top: 1px solid;
   border-left: 3px solid;
   padding-left: 1em;
+  margin-top: 2.5em;
 }
 p.more {
   font-family: verdana, sans-serif;
