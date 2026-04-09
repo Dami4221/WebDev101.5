@@ -137,7 +137,7 @@ footer {
 }
 @media screen and (min-width: 450px) {
   nav ul li {
-	flex: none;
+	flex: none; /* equivalent to flex: 0 0 auto; */
   }
   nav ul {
 	justify-content: center;
@@ -166,9 +166,9 @@ footer {
 	  grid-template-rows: auto min-height 5em;
 	  grid-template-columns: minmax(25em, 1fr) 16em;
 	  grid-template-areas:
-	   "banner banner"
-	   "main hours"
-	   "footer footer";
+	  "banner banner"
+	  "main hours"
+	  "footer footer";
 	  max-width: 1200px;
 	  margin: 0 auto;
 	  position: relative;						
