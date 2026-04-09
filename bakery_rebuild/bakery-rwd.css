@@ -137,10 +137,10 @@ footer {
 }
 @media screen and (min-width: 450px) {
   nav ul li {
-	flex: none; /* equivalent to flex: 0 0 auto; */
+    flex: none; /* equivalent to flex: 0 0 auto */
   }
   nav ul {
-	justify-content: center;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 500px) {
@@ -161,31 +161,31 @@ footer {
   }
 }
 @media screen and (min-width: 940px) {
-   #container {
-      display: grid;
-	  grid-template-rows: auto min-height 5em;
-	  grid-template-columns: minmax(25em, 1fr) 16em;
-	  grid-template-areas:
-	  "banner banner"
-	  "main hours"
-	  "footer footer";
-	  max-width: 1200px;
-	  margin: 0 auto;
-	  position: relative;						
-}
-   header {grid-area: banner; }
-   main {grid-area: main; }
-   aside {
-	grid-area: hours;
-	background: url(images/scallop.png) repeat-y left top;
-	background-color: #F6F3ED;
-	padding: 16px;
-	padding-left: 45px;
-   }
-   footer {grid-area: footer; }
-   #award {
-	position: absolute;
-	top: 30px;
-	left: 50px;
-   }
+  #container {
+    display: grid;
+    grid-template-rows: auto min-height 5em;
+    grid-template-columns: minmax(25em, 1fr) 16em;
+    grid-template-areas:
+      "banner banner"
+      "main hours"
+      "footer footer";
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  header { grid-area: banner; }
+  main   { grid-area: main; }
+  aside  {
+    grid-area: hours;
+    background: url(images/scallop.png) repeat-y left top;
+    background-color: #F6F3ED;
+    padding: 16px;
+    padding-left: 45px;
+  }
+  footer { grid-area: footer; }
+  #award {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+  }
 }
