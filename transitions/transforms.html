@@ -31,8 +31,16 @@ img {
   height: 150px;
   box-shadow: 2px 2px 2px rgba(0,0,0,.4);
 }
-
-
+a:hover #img1, a:focus #img1 { transform: rotate(-3deg) scale(1.5); }
+a:hover #img2, a:focus #img2 { transform: rotate(5deg) scale(1.2); }
+a:hover #img3, a:focus #img3 { transform: rotate(-7deg) scale(1.1); }
+a:hover #img4, a:focus #img4 { transform: rotate(2deg) scale(1.3); }
+a:hover img, a:focus img {
+  box-shadow: 6px 6px 6px rgba(0,0,0,.3);
+}
+img {
+  transition: transform .3s linear;
+}
 
 </style>
 </head>
