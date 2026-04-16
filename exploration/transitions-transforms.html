@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transitions & Transforms Practice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2em;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 1em 2em;
+      margin: 1em;
+      background-color: #9dc3e6;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+      padding: 1em;
+      width: 200px;
+      margin: 1em;
+      text-align: center;
+      display: inline-block;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    /* ✨ Add your transition and transform effects below this line ✨ */
+    #hoverButton {
+      transition: background-color 0.3s ease;
+
+    }
+    #hoverButton:hover {
+      background-color: lightgreen;
+      transform: scale(1.1);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    /*added hover effects to button1 with background color change, scaling, and shadow*/
+    #clickButton {
+      transition: background-color 0.3s ease;
+    }
+    #clickButton:active {
+      background-color: lightcoral;
+      transform: scale(1.2);
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    /*added active effects to button2 with background color change, scaling, and shadow*/
+    #card1 {
+      transition: background-color 0.5s ease-in-out;
+    }
+    #card1:hover {
+      background-color: orangered;
+      transition: .5s ease-in-out;
+    }
+    /*added background color change on hover to card 1*/
+    #card2 {
+      transition: transform 0.5s ease-in-out;
+    }
+    #card2:active, #card2:focus {
+      transform: rotate(720deg);
+      background-color: lightblue;
+    }
+    /*added rotation and background color change on active/focus to card 2*/
+  </style>
+</head>
+<body>
+  <h1>Transitions & Transforms Practice</h1>
+
+  <a href="#" class="button" id="hoverButton">Hover Me</a>
+  <a href="#" class="button" id="clickButton">Click Me</a>
+
+  <div class="card" id="card1">
+    <img src="https://placecats.com/200/150" alt="Cat">
+    <h3>Card Title</h3>
+    <p>Try adding a hover effect!</p>
+  </div>
+
+  <div class="card" id="card2">
+    <img src="https://placebear.com/200/150" alt="Bear">
+    <h3>Another Card</h3>
+    <p>Make me spin or scale up!</p>
+  </div>
+</body>
+</html>
