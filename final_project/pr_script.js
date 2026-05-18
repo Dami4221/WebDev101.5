@@ -1,4 +1,3 @@
-// Grab the form controls and the summary display div
 const nameInput = document.getElementById('form-name');
 const roleSelect = document.getElementById('form-role');
 const summaryDiv = document.getElementById('volunteer-summary');
